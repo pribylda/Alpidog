@@ -1,3 +1,0 @@
-git add CNAME
-git commit -m "Add CNAME file for custom domain"
-git push
