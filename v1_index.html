@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Přibyl">
+    <title>Alpidog Mako psí chovná stanice </title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBQQZWDT2G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TBQQZWDT2G');
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            display: none; /* Skryté sekce */
+            padding: 20px;
+        }
+        .container.active {
+            display: block; /* Viditelné sekce */
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            border: 2px outset #0a9e2a;
+            border-radius: 4px;
+            padding: 5px;
+            width: 400px;
+        }
+        .zvyrazneni {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alpidog Mako Chovná stanice </h1>
+    </header>
+    <nav>
+        <a data-target="about" title="informace o nás">O nás</a>
+        <a data-target="gallery" title="galerie našich psů">Galerie</a>
+        <a data-target="location" title="lokace chovné stanice">Kde nás najdete</a>
+        <a data-target="puppies" title="štěňata na prodej">Štěňata na prodej</a>
+    </nav>
+
+    <div class="container active" id="about">
+        <h2>O nás</h2>
+        <p>Vítejte v naší chovné stanici Alpidog Mako! Specializujeme se na chov zdravých a šťastných psů s rodokmenem. Naším cílem je poskytovat domov štěňatům, která budou vašimi věrnými společníky na celý život.</p>
+    </div>
+
+    <div class="container" id="gallery">
+        <h2>Galerie</h2>
+        <h1 style="text-align: center;">Alpi</h1>
+        <div class="gallery">
+            <img src="./Alpi1.jpg" alt="Alpi1">
+            <img src="./alpi2.jpg" alt="alpi2">
+            <img src="dog3.jpg" alt="Pes 3">
+        </div>
+    </div>
+
+    <div class="container" id="location">
+        <h2>Kde nás najdete</h2>
+        <p>Naše chovná stanice se nachází Plzni na Slovanech. Přesná adresa:</p>
+        <p><strong>Alpidog Mako, Olšová 12, 326 00 Plzeň</strong></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14589.065791299305!2d13.393090268083615!3d49.729496670811145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470aee244d409525%3A0x6472d7550cb71e03!2zT2zFoW92w6EgODA5LzEyLCAzMjYgMDAgUGx6ZcWIIDItU2xvdmFueS1Ww71jaG9kbsOtIFDFmWVkbcSbc3TDrQ!5e0!3m2!1scs!2scz!4v1736018702798!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="container" id="puppies">
+        <h2>Štěňata na prodej</h2>
+        <p>V současné době nabízíme následující štěňata:</p>
+        <ul>
+            <li>Štěně 1 - </li>
+            <li>Štěně 2 - </li>
+            <li>Štěně 3 - </li>
+        </ul>
+        <p>Kontaktujte nás pro více informací a rezervaci!</p>
+    </div>
+
+    <footer>
+        <p>Kontakt: <a href="tel:+420777969672" style="color: lightblue;">+420 777 969 672</a> <a href=""></a> | <a href="mailto:marketapribylova@email.cz" style="color: lightblue;">marketapribylova@email.cz</a></p>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('nav a');
+        const contents = document.querySelectorAll('.container');
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                // Skryj všechny sekce
+                contents.forEach(content => content.classList.remove('active'));
+                // Zobraz příslušnou sekci
+                const target = link.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
