@@ -25,14 +25,9 @@
     font-size: 1.2em;
 }
 
-/* Responzivita pro mobilní zařízení */
+/* Responzivní zobrazení pro mobily */
 @media (max-width: 768px) {
     .odchovy-grid {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .odchovy-grid img {
-        width: 80%;
+        grid-template-columns: 1fr;
     }
 }
