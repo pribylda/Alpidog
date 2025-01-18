@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Přibyl">
+    <meta name="description" content="Webová stránka rodinné chovné stanice stafordšírských bulteriérů v Plzni.">
+    <meta name="keywords" content="stafordšírský bulteriér, chovná stanice, štěňata, psi, Alpidog Mako, Alpi, Alpidog, Markéta Přibylová, StaffBull, Plzeň">
+    <meta name="robots" content="index, follow">
+    <!-- meta tagy pro sociální sítě --> 
+    <meta property="og:title" content="Alpidog Mako - Chovná stanice stafordšírských bulteriérů">
+    <meta property="og:description" content="Rodinná chovná stanice stafordšírských bulteriérů v Plzni.">
+    <meta property="og:image" content="https://alpidogmako.cz/obrazky/logo.jpg">
+    <meta property="og:url" content="https://alpidogmako.cz/">
+    <title>Alpidog Mako Chovná stanice</title>
+    <link rel="icon" href="./obrazky/logo.png" type="image/x-icon">
+    <!-- styly css -->
+    <link rel="stylesheet" href="./css/navidacnimenu.css">
+    <link rel="stylesheet" href="./css/obsah.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- přidání stylu písma -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBQQZWDT2G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TBQQZWDT2G');
+    </script>
+    <!-- Zobrazení loga, popisu, jména,... -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Alpidog Mako Chovná stanice",
+            "description": "Webová stránka rodinné chovné stanice stafordšírských bulteriérů v Plzni.",
+            "url": "https://alpidogmako.cz/",
+            "logo": "https://alpidogmako.cz/obrazky/logo.png",
+        }
+    </script>
+        
+</head>
+<body>
+    <!-- Načtení souboru php k menu na googlu -->
+    <?php include 'navigace.php'; ?>
+    <!-- Navigační menu -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">O nás</a></li>
+                <li><a href="/instagram/">Instagram</a></li>
+                <li><a href="/nasi_psi/">Naši psi</a></li>
+                <li><a href="/stenata/">Štěňata</a></li>
+                <li><a href="/odchovy/">Odchovy</a></li>
+                <li><a href="/kontakt/">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/">O nás</a></li>
+                <li><a href="/instagram/">Instagram</a></li>
+                <li><a href="/nasi_psi/">Naši psi</a></li>
+                <li><a href="/stenata/">Štěňata</a></li>
+                <li><a href="/odchovy/">Odchovy</a></li>
+                <li><a href="/kontakt/">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="./obrazky/banner_logo.jpg" alt="banner s logem">
+    </div>
+
+    <!-- Obsah stránky -->
+    <main>
+        <div class="obsah">
+            <section class="styl-obsah">
+                <img src="./obrazky/alpibublimama.jpg" alt="Fotka chovatelky se psy">
+                <div class="text-obsah">
+                    <h2>O nás</h2>
+                    <p>Jsme malá rodinná chovatelská stanice stafordšírských bulteriérů.</p>
+                    <p>Pejskové s námi žijí už velice dlouho. První chlupatí členové rodiny byli Lenny a jeho syn Pedro Labradorští retrívři. V&nbsp;současné době jsou také dva, ale fenečky stafordšírských bulteriérů Alpinka a Bublinka. Všichni jsme propojeni chlupatou láskou. ❤</p>
+                    <p>Najdete nás v Plzni.<br>Alpidog Mako</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="custom-footer">
+        <p>© Chovatelská stanice Alpidog Mako | Web vytvořil <a href="https://www.instagram.com/pribyl.da?igsh=YmkxMmhqbHk1cHUx">David Přibyl</a> <br> &nbsp; <br> 📍 Plzeň Slovany | 📞 <a href="tel:+420123456789">+420 123 456 789</a> | 📧 <a href="mailto:info@alpidogmako.cz">info@alpidogmako.cz</a> | 📷 <a href="https://www.instagram.com/alpidogmako" target="_blank">Instagram</a></p>
+    </footer>
+    
+    <!-- script navigačního menu pro mobil -->
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+    
+</body>
+</html>
