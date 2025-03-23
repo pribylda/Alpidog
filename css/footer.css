@@ -55,7 +55,7 @@ footer {
   
 /* Responzivita */
 @media (max-width: 768px) {
-    .footer-container {
+    .footer-container, .footer-container a {
       flex-direction: column;
       text-align: center;
     }
