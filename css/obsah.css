@@ -1,7 +1,7 @@
 
 /* Vycentrování obsahu a pravidelné okraje */
 .obsah {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px; /* Zvětšený padding pro více prostoru */
 }
@@ -30,7 +30,7 @@
 
 /* Stylování textové sekce */
 .text-obsah {
-    max-width: 600px;
+    max-width: 800px;
     color: #333; /* Tmavší barva pro lepší čitelnost */
     font-size: 20px; /* Větší písmo */
     line-height: 1.8; /* Větší mezery mezi řádky */
