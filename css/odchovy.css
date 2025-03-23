@@ -1,0 +1,33 @@
+.odchovy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.odchov-item {
+    text-align: center;
+}
+
+.odchov-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.odchov-item img:hover {
+    transform: scale(1.05);
+}
+
+.odchov-item h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Responzivní zobrazení pro mobily */
+@media (max-width: 768px) {
+    .odchovy-grid {
+        grid-template-columns: 1fr;
+    }
+}
