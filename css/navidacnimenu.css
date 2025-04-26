@@ -92,12 +92,19 @@ nav ul li a:hover {
 .mobile-menu li a {
     color: #333;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #d9c2a3; /* světlé pozadí */
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: bold;
 }
 
 .mobile-menu li a:hover {
-    color: #a68063;
+    background-color: #a68063; /* tmavší na hover */
+    color: white;
 }
 
 .open .mobile-menu {
