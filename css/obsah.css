@@ -43,6 +43,9 @@
 
 /* Responzivita pro mobilní zařízení */
 @media (max-width: 768px) {
+    .obsah {
+        margin: 0 auto;
+    }
     .styl-obsah {
         flex-direction: column;
         
