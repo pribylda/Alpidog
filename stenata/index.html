@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Přibyl">
+    <meta name="description" content="Štěňata na prodej.">
+    <meta name="keywords" content="stafordšírský bulteriér, chovná stanice, štěňata, psi, Alpidog Mako, Alpi, Alpidog, Markéta Přibylová, StaffBull, Plzeň">
+    <meta name="robots" content="index, follow">
+    <title>Štěňata | Alpidog Mako Chovná stanice</title>
+    <link rel="icon" href="../obrazky/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/navidacnimenu.css">
+    <link rel="stylesheet" href="../css/obsah.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- přidání stylu písma -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBQQZWDT2G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TBQQZWDT2G');
+    </script>
+ 
+</head>
+<body>
+    <!-- Načtení souboru php k menu na googlu -->
+    <script>
+        fetch('navigace.php')
+          .then(response => response.text())
+          .then(data => console.log(data));
+    </script>
+    <!-- Navigační menu -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">O nás</a></li>
+                <li><a href="/instagram/">Instagram</a></li>
+                <li><a href="/nasi_psi/">Naši psi</a></li>
+                <li><a href="/stenata/">Štěňata</a></li>
+                <li><a href="/odchovy/">Odchovy</a></li>
+                <li><a href="/kontakt/">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/">O nás</a></li>
+                <li><a href="/instagram/">Instagram</a></li>
+                <li><a href="/nasi_psi/">Naši psi</a></li>
+                <li><a href="/stenata/">Štěňata</a></li>
+                <li><a href="/odchovy/">Odchovy</a></li>
+                <li><a href="/kontakt/">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="../obrazky/banner_logo.jpg" alt="banner s logem">
+    </div>
+
+    <!-- Obsah stránky -->
+    <main>
+        <div class="obsah">
+            <section class="styl-obsah">
+                <img src="../obrazky/stene.jpg" alt="první štěně">
+                <div class="text-obsah">
+                    <h2>První štěně</h2>
+                    <p></p>
+                </div>
+            </section>
+            <section class="styl-obsah">
+                <img src="../obrazky/stene.jpg" alt="druhé štěně">
+                <div class="text-obsah">
+                    <h2>Druhé štěně</h2>
+                    <p></p>
+                </div>
+            </section>
+            <section class="styl-obsah">
+                <img src="../obrazky/stene.jpg" alt="třetí štěně">
+                <div class="text-obsah">
+                    <h2>Třetí štěně</h2>
+                    <p></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>© Chovatelská stanice Alpidog Mako</h3>
+            <p>Web vytvořil <a href="https://www.instagram.com/pribyl.da?igsh=YmkxMmhqbHk1cHUx"><strong>David Přibyl</strong></a></p>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Kontakt</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Plzeň, Česká republika</p>
+            <p><i class="fas fa-phone"></i> +420 123 456 789</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@alpidogmako.cz">info@alpidogmako.cz</a></p>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Sledujte nás</h3>
+            <p><a href="https://www.instagram.com/alpidogmako" class="social"><i class="fab fa-instagram"></i> Instagram</a></p>
+          </div>
+        </div>
+        
+        <p class="copyright">© Chovatelská stanice Alpidog Mako | Všechna práva vyhrazena</p>
+    </footer>
+
+    <!-- script navigačního menu pro mobil -->
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
