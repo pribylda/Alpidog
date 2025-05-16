@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://alpidogmako.cz/sitemap.xml
