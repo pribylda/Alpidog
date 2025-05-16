@@ -1,0 +1,48 @@
+/* Sekce galerie psa */
+#galerie-psa {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7ebd7;
+    color: #333;
+}
+
+/* Mřížka galerie */
+.galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Styl jednotlivých fotek */
+.foto {
+    width: 100%; /* Šířka se přizpůsobí gridu */
+    aspect-ratio: 1 / 1; /* Vytvoří čtvercový poměr */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Upraví obrázek tak, aby vyplnil celý čtverec */
+    transition: transform 0.3s ease;
+}
+
+/* Efekt při najetí myší */
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+/* Responzivita */
+@media (max-width: 768px) {
+    .galerie-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
